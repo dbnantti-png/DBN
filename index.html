@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <footer>
-    December, 2025
-  </footer>
   <title>Once a Month</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -30,6 +27,30 @@
       font-size: 0.8em;
       color: #666;
     }
+    form {
+      margin-top: 40px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      font-family: Georgia, serif;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      font-family: Georgia, serif;
+      font-size: 1em;
+      border: none;
+      border-radius: 4px;
+      background: #222;
+      color: #f6f6f4;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -46,23 +67,17 @@ What have you already lived
 that the world has not yet caught up with?
 </div>
 
+<!-- Staticman comment form -->
+<form action="https://<YOUR_STATICMAN_INSTANCE>/v3/entry/github/dbnantti-png/DBN/master/comments" method="POST">
+  <input type="text" name="fields[name]" placeholder="Your name or nickname" required>
+  <textarea name="fields[comment]" placeholder="Your thought" rows="4" required></textarea>
+  <input type="hidden" name="options[redirect]" value="https://dbnantti-png.github.io/DBN/">
+  <button type="submit">Submit Thought</button>
+</form>
+
 <footer>
-Published quietly. One thought per month.
+Published quietly. One thought per month. <a href="archive.html">Archive</a>
 </footer>
 
-<script src="https://giscus.app/client.js"
-        data-repo="dbnantti-png/DBN"
-        data-repo-id="TÄYTYY_AUTOMAATTISESTI"
-        data-category="General"
-        data-category-id="TÄYTYY_AUTOMAATTISESTI"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-theme="light"
-        crossorigin="anonymous"
-        async>
-</script>
-  
 </body>
 </html>
